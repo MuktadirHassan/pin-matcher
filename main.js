@@ -50,6 +50,7 @@ calcBody.addEventListener("click", e => {
 const submitBtn = document.querySelector(".submit-btn");
 submitBtn.addEventListener("click", () => {
     const notify = document.getElementsByClassName("notify");
+    calcValue = calcInput.value;
     if (parseInt(pin) === parseInt(calcValue)) {
         notify[1].style.display = "block";
         notify[0].style.display = "none";
